@@ -2,6 +2,14 @@
 
 A lightweight, cross-browser web extension that provides intelligent summaries of any webpage using Google's Gemini API.
 
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/89ca7b0f-05c7-4fd2-8ef4-3fb4f27842d2" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/52d1ab49-c8f1-4470-8a27-eeb285b00437" width="300"/></td>
+  </tr>
+</table>
+
+
 ## Features
 
 - **One-Click Summarization**: Generate summaries for any webpage with a single click
@@ -36,7 +44,7 @@ A lightweight, cross-browser web extension that provides intelligent summaries o
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/universal-summarizer.git
+   git clone https://github.com/adarshukla3005/webpage-summarizer-extension.git
    ```
 
 2. Open your browser's extension management page:
@@ -52,7 +60,7 @@ A lightweight, cross-browser web extension that provides intelligent summaries o
 
 1. Navigate to the `api` folder:
    ```
-   cd universal-summarizer/api
+   cd webpage-summarizer-extension/api
    ```
 
 2. Create a virtual environment:
