@@ -66,7 +66,7 @@ A lightweight, cross-browser web extension that provides intelligent summaries o
 2. Create a virtual environment:
    ```
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   venv\Scripts\activate  # On Linux: source venv/bin/activate
    ```
 
 3. Install the required packages:
