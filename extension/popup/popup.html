@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal Summarizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Universal Summarizer</h1>
+    </div>
+    
+    <div id="page-info" class="page-info">
+      <h2 id="page-title">Loading page details...</h2>
+      <p id="page-url" class="url-text"></p>
+    </div>
+    
+    <div class="controls">
+      <button id="summarize-btn" class="primary-btn">Summarize Page</button>
+      
+      <div class="length-selector">
+        <span>Summary Length:</span>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="length" value="short" checked>
+            Short
+          </label>
+          <label>
+            <input type="radio" name="length" value="medium">
+            Medium
+          </label>
+          <label>
+            <input type="radio" name="length" value="long">
+            Long
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="results">
+      <div id="loading" class="hidden">
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+        <p class="loading-text">Generating Summary...</p>
+      </div>
+      
+      <div id="summary-container" class="hidden">
+        <div class="summary-header">
+          <h2>Summary</h2>
+          <div class="actions">
+            <button id="copy-btn" title="Copy to clipboard">
+              <span class="icon">📋</span>
+            </button>
+            <button id="share-btn" title="Share summary">
+              <span class="icon">🔗</span>
+            </button>
+          </div>
+        </div>
+        
+        <div id="summary-content"></div>
+        <div id="key-points"></div>
+        
+        <div class="feedback">
+          <p>Was this summary helpful?</p>
+          <div class="rating">
+            <button class="rating-btn" data-rating="1">👎</button>
+            <button class="rating-btn" data-rating="5">👍</button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="error-container" class="hidden">
+        <p class="error-message">Unable to generate summary. Please try again.</p>
+        <button id="retry-btn" class="secondary-btn">Retry</button>
+      </div>
+    </div>
+    
+    <!-- History Section -->
+    <div id="history-section" class="history-section">
+      <div class="section-header">
+        <h2>Recent Summaries</h2>
+        <button id="clear-history" class="icon-btn" title="Clear all history">🗑️</button>
+      </div>
+      <div id="history-list" class="history-list">
+        <!-- History items will be populated here -->
+      </div>
+    </div>
+    
+    <div class="footer">
+      <button id="settings-btn" class="icon-btn" title="Settings">⚙️</button>
+      <a href="#" id="privacy-link">Privacy Policy</a>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 
