@@ -1,4 +1,4 @@
-# Universal Summarizer Extension
+# Web Summarizer Extension
 
 A lightweight, cross-browser web extension that provides intelligent summaries of any webpage using Google's Gemini API.
 
